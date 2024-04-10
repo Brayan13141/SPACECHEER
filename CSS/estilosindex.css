@@ -1,0 +1,318 @@
+/*----------------------------------*/
+/*BOTONES----------------------------------*/
+.boton {
+  background-color: green;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: large;
+  cursor: pointer;
+  width: 20%;
+}
+.divbotones {
+  display: flex;
+  justify-content: normal;
+  gap: 10px;
+}
+/*----------------------------------*/
+/*CUERPO----------------------------------*/
+.html {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#particles-js {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  display: flex;
+  z-index: -111;
+}
+/*----------------------------------*/
+/*LOGO----------------------------------*/
+.logo {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 5px;
+  transition: 2s;
+}
+.logo:hover {
+  width: 230px;
+  height: 230px;
+  transition: 2s;
+}
+.contenedorLogo img {
+  position: absolute;
+  border: 2px solid white;
+}
+.contenedorLogo {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 1%;
+}
+/*----------------------------------*/
+/*VIDEO----------------------------------*/
+.video {
+  height: 100%;
+  width: 100%;
+  border-radius: 3%;
+  border: none;
+}
+.contenedorvideo {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  display: block;
+  top: 260px;
+  left: 20px;
+}
+/*----------------------------------*/
+/*TARGETAS----------------------------------*/
+.divtargetas {
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  position: relative;
+  justify-content: space-between;
+  top: 670px;
+  left: 40px;
+}
+.targeta {
+  height: 300px;
+  width: 220px;
+  background-color: transparent;
+  border-radius: 10%;
+  margin: 5px;
+  gap: 10px;
+  padding: 1px;
+  box-shadow: 2px 2px 7px #615b5b79;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  transition: 2s;
+}
+.targeta:hover {
+  box-shadow: 2px 2px 7px #ffffff;
+  background: rgba(255, 255, 255, 0.315);
+  transition: 2s;
+}
+.targeta img {
+  width: 170px;
+  height: 150px;
+  border-radius: 100%;
+  /* padding: 5px; */
+  margin: 5px;
+  position: relative;
+  border: 2px solid white;
+  left: 15px;
+}
+.targeta button {
+  background-color: green;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.targeta p {
+  color: white;
+}
+/* ----------------------------------*/
+/*SLIDER ----------------------------------*/
+.container {
+  position: relative;
+  top: 560px;
+}
+.slider /*CONTENEDOR DE IMAGENES*/ {
+  width: 300px;
+  height: 200px;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-wrap: nowrap; /*COLOCA LOS ELEMENTOS DE MANERA CONSECUTIVA*/
+  overflow-x: hidden; /*MANTIENE LOS ELEMENTOS DENTRO DEL DIV*/
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 2px 2px 7px #615b5b79;
+  border-radius: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+}
+.slider--wrapper /*CONTENEDOR GENERAL PARA IMAGENES*/ {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: inherit;
+}
+.slider-navegador {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  top: 90px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-navegador a {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 40%;
+  background-color: white;
+  opacity: 100%;
+  transition: opacity ease 250ms;
+}
+.slider-navegador a:hover {
+  opacity: 1%;
+}
+.slider img {
+  flex: 1 0 100%; /*flex=sirve para ajustar las imagenes, 1=Todas las imagenes seran iguales a la anterior,0=cada imagen retentra su ancho,100=inician con el 100% del tamaño*/
+  scroll-snap-align: start;
+  object-fit: initial;
+}
+/* --------------------------------- */
+/*PANEL PRINCIPAL----------------------  */
+.PanelMenu .TextoDeImagen img {
+  width: 40px;
+  border-radius: 6px;
+  padding: 2px 2px 0px 5px;
+}
+.PanelMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 47px;
+  background: rgb(245, 240, 240);
+  border-radius: 2%;
+  transition: var(--tran-05);
+  z-index: 9999;
+}
+.PanelMenu .text {
+  font-size: 16px;
+  font-weight: 500;
+}
+.PanelMenu .ImagenSpamPM {
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+}
+.PanelMenu header .TextoDeImagen {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.PanelMenu header .flecha {
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  height: 15px;
+  width: 15px;
+  background: rgb(192, 185, 250);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: black;
+  font-size: 22px;
+}
+.PanelMenu header .flecha:hover {
+  height: 100px;
+  /* width: 100%; */
+  border-radius: 0;
+  transition: var(--tran-05);
+}
+.PanelMenu header {
+  position: relative;
+}
+.PanelMenu .menu .Buscar {
+  width: 70%;
+}
+.PanelMenu li a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-radius: 6px;
+  transition: var(--tran-05);
+}
+.PanelMenu li {
+  margin-top: 10px;
+  height: 50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.PanelMenu li .icon {
+  font-size: 20px;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PanelMenu li .icon,
+.PanelMenu li .Texto {
+  color: black;
+  transition: var(--tran-03);
+}
+.PanelMenu li a:hover .icon,
+.PanelMenu li a:hover .Texto {
+  color: rgb(255, 255, 255);
+  transition: var(--tran-03);
+}
+.PanelMenu .Caja-Buscar {
+  background: white;
+}
+.Caja-Buscar input {
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: white;
+}
+.PanelMenu li a:hover {
+  background: rgb(95, 95, 194);
+}
+.PanelMenu .Barra-Menu {
+  display: flexbox;
+  height: calc(100%-50px);
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: space-between; */
+}
+.menu-links .li-links .Texto {
+  opacity: 0;
+}
+.TextoLogo {
+  opacity: 0;
+}
+
+#Inicio,
+#Equipo,
+#Salir {
+  display: none;
+}
+/* --------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}

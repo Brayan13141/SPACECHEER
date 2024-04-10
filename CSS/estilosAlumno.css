@@ -1,0 +1,289 @@
+/*FONDO---------------------------- */
+.Principal {
+  position: absolute;
+  background: black;
+  height: 100%;
+  width: 100%;
+  display: flexbox;
+  overflow-x: hidden;
+}
+/*---------------------------- */
+/* --------------------- TITULOS -------------*/
+.Titulo h1{
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  font-size: 35px;
+}
+/*LOGO---------------------------- */
+.contenedorLogo {
+  height: 100%;
+  width: 100%;
+  background-size: auto;
+  margin: 0 auto;
+  position: absolute;
+  left: 510px;
+  top: 0;
+}
+.logoP {
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  border: 1px solid white;
+}
+/*LOGO-PANEL DE NAVEGACION---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+.PanelMenu .TextoDeImagen img {
+  width: 40px;
+  border-radius: 6px;
+  padding: 2px 2px 0px 5px;
+}
+.PanelMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 47px;
+  background: rgb(255, 255, 255);
+  border-radius: 2%;
+  transition: var(--tran-05);
+  overflow: hidden;
+  z-index: 9999;
+}
+.PanelMenu .text {
+  font-size: 16px;
+  font-weight: 500;
+}
+.PanelMenu .ImagenSpamPM {
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+}
+.PanelMenu header .TextoDeImagen {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.PanelMenu header .flecha {
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  height: 17px;
+  width: 17px;
+  background: rgb(192, 185, 250);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: black;
+  font-size: 22px;
+}
+.PanelMenu header .flecha:hover {
+  height: 100px;
+  /* width: 100%; */
+  border-radius: 0;
+  transition: var(--tran-05);
+}
+.PanelMenu header {
+  position: relative;
+}
+.PanelMenu .menu .Buscar {
+  width: 70%;
+}
+.PanelMenu li a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-radius: 6px;
+  transition: var(--tran-05);
+}
+.PanelMenu li {
+  margin-top: 10px;
+  height: 50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.PanelMenu li .icon {
+  font-size: 20px;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PanelMenu li .icon,
+.PanelMenu li .Texto {
+  color: black;
+  transition: var(--tran-03);
+}
+.PanelMenu li a:hover .icon,
+.PanelMenu li a:hover .Texto {
+  color: rgb(255, 255, 255);
+  transition: var(--tran-03);
+}
+.PanelMenu .Caja-Buscar {
+  background: white;
+}
+.PanelMenu li a:hover {
+  background: rgb(95, 95, 194);
+}
+.PanelMenu .Barra-Menu {
+  display: flexbox;
+  height: calc(100%-50px);
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: space-between; */
+}
+.menu-links .li-links .Texto {
+  opacity: 0;
+}
+
+.TextoLogo {
+  opacity: 0;
+}
+#Perfil,
+#Equipo,
+#Salir {
+  display: none;
+}
+/*---------------------------- */
+/*DATOS PROPIOS---------------------------- */
+.LogoEquipo {
+  height: 100%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.554);
+}
+.BarraDatos {
+  position: absolute;
+  left: 55px;
+  top: 10px;
+  height: 350px;
+  width: 94%;
+  border: 1px solid rgba(255, 255, 255, 255);
+  border-radius: 30px;
+  text-align: center;
+  background: none;
+  border: none;
+  overflow: hidden;
+  flex-grow: 1;
+  box-shadow: 0 8px 10px rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.DatosAlumno {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.433);
+  display: flex;
+  flex-direction: column;
+ 
+}
+.D{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-around;
+  padding: 0 0 0 20px;
+  font-size: 20px;
+}
+.DatosAlumno h4 {
+  color: white;
+  left: 40px;
+  font-size: 30px;
+}
+/*---------------------------- */
+/*TABLAS---------------------------- */
+.Principal .Tabla-Datos {
+  position: absolute;
+  left: 500px;
+  top: 380px;
+  height: 350px;
+  width: 58%;
+  border: 1px solid rgba(255, 255, 255, 255);
+  border-radius: 30px;
+  background: none;
+  border: none;
+  box-shadow: 0 8px 10px rgba(255, 255, 255, 0.3);
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 28px;
+  overflow: hidden;
+}
+.Principal .Tabla-Datos .opciones {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+}
+.opcion {
+  text-align: center;
+  border: solid 1px black;
+  cursor: pointer;
+  line-height: 60px;
+  flex-grow: 1;
+}
+.opcion-activa {
+  background: rgba(255, 255, 255, 0.776);
+  border-bottom: 1px solid regb(7, 63, 85, 0.4);
+}
+.contenido {
+  position: absolute;
+  top: 52px;
+  left: 5px;
+  padding: 10px;
+  display: none;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.contenido h1 {
+  padding-bottom: 10px;
+  font-size: 25px;
+  border-bottom: solid 1px black;
+}
+.contenido-activo {
+  display: block;
+  background: rgba(255, 255, 255, 0.776);
+}
+/*---------------------------- */
+/*MEDIDAS PROPIAS---------------------------- */
+.medidasP {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 255);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.348);
+  border: none;
+  box-shadow: 0 8px 10px rgba(255, 255, 255, 0.3);
+  height: 70%;
+  width: 437px;
+  top: 380px;
+  left: 56px;
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
+  font-size: 22px;
+}
+/*---------------------------- */

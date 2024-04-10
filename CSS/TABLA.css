@@ -1,0 +1,25 @@
+body{
+   
+    overflow-y: scroll;
+  
+}
+.ContenedorPrincipal {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.Tabla_Alumnos
+{
+  width: auto !important;
+  max-width: none !important;
+  margin: 1%;
+
+}
+th{
+    font-size:  small;
+}

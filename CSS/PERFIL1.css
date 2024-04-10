@@ -1,0 +1,56 @@
+body {
+  overflow: hidden;
+  margin: 0;         
+  padding: 0;           
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.contenedorPrincipal{
+  position: absolute;
+  width: 100%;
+  height: 500px; 
+}
+.Info_Img {
+  margin: 45px;
+  width: 100%;
+  height: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+}
+
+#Info {
+  display: block;
+  width: 50%;
+  color: rgb(
+    255,
+    255,
+    255
+  ); /* Añadido para asegurar que el texto sea visible */
+}
+
+#Logo_Equipo {
+  max-width: 20%;
+  margin: 0 auto;
+  position: absolute;
+  display: block;
+}
+.divBoton
+{
+  margin:55px;
+}
+.Img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+#Tabla_Alumnos {
+  margin: 45px;
+  padding: 5px;
+}
+#Perfil,#Equipo{
+  display: none;
+}
